@@ -1,0 +1,33 @@
+{
+  "name": "shipengine-acenda",
+  "description": "Acenda Shipengine-Connect Integration",
+  "version": "1.0.0",
+  "author": "Baturay",
+  "appId": "cf1e9059-9863-4e18-9d7e-f922f35fe960",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "typescript": "^4.8.4"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "keywords": [
+    "ShipEngine",
+    "order app"
+  ],
+  "main": "lib/index.js",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "node lib/serve.js",
+    "test": "exit 0",
+    "watch": "tsc --watch"
+  },
+  "types": "lib/index.ts",
+  "dependencies": {
+    "@shipengine/connect-order-source-api": "^3.14.0",
+    "@shipengine/connect-runtime": "^1.1.0",
+    "axios": "^1.2.0",
+    "fast-xml-parser": "^4.0.12"
+  }
+}
